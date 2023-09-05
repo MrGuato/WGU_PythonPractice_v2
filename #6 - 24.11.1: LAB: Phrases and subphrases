@@ -1,0 +1,19 @@
+# Read two phrases on separate lines
+phrase1 = input()
+phrase2 = input()
+
+# Check if both phrases match
+if phrase1 == phrase2:
+    result = "Both phrases match"
+# Check if phrase1 is found within phrase2
+elif phrase1 in phrase2:
+    result = "{} is found within {}".format(phrase1, phrase2)
+# Check if phrase2 is found within phrase1
+elif phrase2 in phrase1:
+    result = "{} is found within {}".format(phrase2, phrase1)
+# If no matches are found
+else:
+    result = "No matches"
+
+# Output the result
+print(result)
