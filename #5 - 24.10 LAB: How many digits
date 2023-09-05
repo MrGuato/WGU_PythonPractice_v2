@@ -1,0 +1,12 @@
+# Read an integer input
+number = int(input())
+
+# Convert the integer to a string and calculate its length
+num_str = str(number)
+num_digits = len(num_str)
+
+# Output the result based on the number of digits
+if num_digits == 1:
+    print("{} digit".format(num_digits))
+else:
+    print("{} digits".format(num_digits))
