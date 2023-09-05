@@ -1,0 +1,12 @@
+# Read two input integers
+num1 = int(input())
+num2 = int(input())
+
+# Compare the two integers and output the larger value
+if num1 > num2:
+    print(num1)
+elif num2 > num1:
+    print(num2)
+else:
+    # If the integers are the same, output their value
+    print(num1)
