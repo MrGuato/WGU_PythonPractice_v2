@@ -1,0 +1,15 @@
+# Read RGB values
+red = int(input())
+green = int(input())
+blue = int(input())
+
+# Find the smallest value among red, green, and blue
+min_value = min(red, green, blue)
+
+# Subtract the smallest value from all three values to remove the gray
+red -= min_value
+green -= min_value
+blue -= min_value
+
+# Output the modified RGB values
+print(red, green, blue)
