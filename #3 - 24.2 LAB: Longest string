@@ -1,0 +1,12 @@
+# Read two input strings
+str1 = input()
+str2 = input()
+
+# Compare the lengths of the strings
+if len(str1) > len(str2):
+    print(str1)
+elif len(str1) < len(str2):
+    print(str2)
+else:
+    # If the lengths are equal, output the second string
+    print(str2)
