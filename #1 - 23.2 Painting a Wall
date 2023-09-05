@@ -1,0 +1,34 @@
+import math
+
+# Step 1: Read wall height, width, and cost of one paint can
+wall_height = float(input())
+wall_width = float(input())
+paint_can_cost = float(input())
+
+# Calculate wall area
+wall_area = wall_height * wall_width
+
+# Output wall area to one decimal place
+print("Wall area: {:.1f} sq ft".format(wall_area))
+
+# Step 2: Calculate amount of paint needed (in gallons)
+paint_needed = wall_area / 350.0
+
+# Output paint needed to three decimal places
+print("Paint needed: {:.3f} gallons".format(paint_needed))
+
+# Step 3: Calculate number of 1-gallon cans needed
+cans_needed = math.ceil(paint_needed)
+
+# Output cans needed
+print("Cans needed: {} can(s)".format(cans_needed))
+
+# Step 4: Calculate paint cost, sales tax, and total cost
+paint_cost = cans_needed * paint_can_cost
+sales_tax = 0.07 * paint_cost
+total_cost = paint_cost + sales_tax
+
+# Output paint cost, sales tax, and total cost with two decimal places
+print("Paint cost: ${:.2f}".format(paint_cost))
+print("Sales tax: ${:.2f}".format(sales_tax))
+print("Total cost: ${:.2f}".format(total_cost))
