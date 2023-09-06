@@ -16,6 +16,3 @@ threshold = int(input())
 for integer in integers:
     if integer <= threshold:
         print(integer, end=',')
-
-# Print a newline character to separate the output from the prompt
-print()
