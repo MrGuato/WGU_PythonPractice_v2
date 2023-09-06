@@ -1,0 +1,21 @@
+# Read the number of integers
+num_integers = int(input())
+
+# Initialize a list to store the integers
+integers = []
+
+# Read the integers and store them in the list
+for _ in range(num_integers):
+    integer = int(input())
+    integers.append(integer)
+
+# Read the threshold value
+threshold = int(input())
+
+# Iterate through the list of integers and print those less than or equal to the threshold
+for integer in integers:
+    if integer <= threshold:
+        print(integer, end=',')
+
+# Print a newline character to separate the output from the prompt
+print()
