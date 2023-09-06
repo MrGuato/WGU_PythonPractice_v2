@@ -1,0 +1,17 @@
+# Initialize a variable to store the largest integer
+largest_integer = -1
+
+# Read the first integer
+num = int(input())
+
+# Keep reading integers until a negative integer is entered
+while num >= 0:
+    # Check if the current integer is larger than the largest integer
+    if num > largest_integer:
+        largest_integer = num
+    
+    # Read the next integer
+    num = int(input())
+
+# Print the largest integer
+print('{}'.format(largest_integer))
