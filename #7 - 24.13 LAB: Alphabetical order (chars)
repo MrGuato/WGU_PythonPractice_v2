@@ -3,16 +3,9 @@ char1 = input()
 char2 = input()
 char3 = input()
 
-# Compare the characters and output them in alphabetical order
-if char1 <= char2 <= char3:
-    print(char1, char2, char3)
-elif char1 <= char3 <= char2:
-    print(char1, char3, char2)
-elif char2 <= char1 <= char3:
-    print(char2, char1, char3)
-elif char2 <= char3 <= char1:
-    print(char2, char3, char1)
-elif char3 <= char1 <= char2:
-    print(char3, char1, char2)
-else:
-    print(char3, char2, char1)
+# Create a list of the characters and sort it
+chars = [char1, char2, char3]
+chars.sort()
+
+# Print the characters in alphabetical order
+print(chars[0], chars[1], chars[2])
