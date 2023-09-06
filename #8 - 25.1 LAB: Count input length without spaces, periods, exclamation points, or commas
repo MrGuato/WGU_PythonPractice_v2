@@ -1,0 +1,14 @@
+# Read the input line
+input_line = input()
+# Initialize a counter for valid characters
+count = 0 
+# Define the characters to exclude
+exclude_chars = " .,!"
+# Iterate through each character in the input line
+for char in input_line:
+    #check if the character is not in the exclude_chars string
+    if char not in exclude_chars:
+        # Increment the counter
+        count += 1
+
+print(count)
