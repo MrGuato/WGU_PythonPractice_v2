@@ -1,0 +1,9 @@
+largest_integer = -1
+
+num = int(input())
+while num >= 0:
+    if num > largest_integer:
+        largest_integer = num
+    
+    num = int(input())
+print('{}'.format(largest_integer))
